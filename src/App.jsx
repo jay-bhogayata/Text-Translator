@@ -4,8 +4,8 @@ import Lang from "./Lang";
 const App = () => {
   return (
     <div className="flex-col flex justify-center">
-      <div className="my-10 px-auto">
-        <h1 className="text-4xl text-purple-600 font-bold text-center">
+      <div className="my-6 md:my-10 px-auto">
+        <h1 className="text-2xl md:text-4xl text-purple-600 font-bold text-center">
           Language translator App
         </h1>
       </div>

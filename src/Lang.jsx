@@ -57,7 +57,7 @@ const Lang = () => {
   };
 
   return (
-    <div className="space-y-6 flex flex-col items-center">
+    <div className="space-y-3 flex flex-col items-center">
       <div className=" flex flex-col space-y-4 w-3/4 md:w-2/5 p-5 border-2 border-purple-300 rounded-lg">
         <label htmlFor="source language" className="text-xl font-semibold">
           Choose your source language:
@@ -69,7 +69,7 @@ const Lang = () => {
           value={srcLang}
           onChange={(e) => setSrcLang(e.target.value)}
         >
-          <option>--Please choose an option--</option>
+          <option>english (en)</option>
           {lang.map((l) => (
             <option value={l.code} key={l.code}>
               {l.name}({l.code})
@@ -94,7 +94,7 @@ const Lang = () => {
           value={targetLang}
           onChange={(e) => setTargetLang(e.target.value)}
         >
-          <option>--Please choose an option--</option>
+          <option>Gujarati (gu)</option>
           {lang.map((l) => (
             <option value={l.code} key={l.code}>
               {l.name}({l.code})
@@ -113,7 +113,7 @@ const Lang = () => {
       <br />
       <button
         onClick={handleClick}
-        className="bg-purple-700 hover:bg-purple-900 text-white px-6 rounded-lg text-xl py-3"
+        className="bg-purple-700 hover:bg-purple-800 text-white px-6 rounded-lg text-xl py-3 hover:border-2 border-black"
       >
         translate
       </button>
